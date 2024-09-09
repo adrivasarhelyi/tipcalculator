@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="main_container">
+    <header class="title">
+      <h1>SPLI<br>TTER</h1>
+    </header>
+    <main class="tip_calculator">
+      <div class="wrapper">
+        <div class="sidebar">
+          <div class="form_bill">
+            <h2>Bill</h2>
+            <div class="input_icons">
+              <i class="fa fa-usd icon"></i>
+              <input type="number" class="form_input bill_input" placeholder="0"/>
+            </div>
+          </div>
+          <div class="form_select_tip">
+            <h2>Select Tip %</h2>
+            <div class="button_container">
+              <button class="tip_btn five_percent">5%</button>
+              <button class="tip_btn ten_percent">10%</button>
+              <button class="tip_btn fifteen_percent">15%</button>
+              <button class="tip_btn twentyfive_percent">25%</button>
+              <button class="tip_btn fifty_percent">50%</button>
+              <input class="custom_input" placeholder="Custom">
+            </div>
+          </div>
+          <div class="form_people_number">
+            <div class="text_wrapper">
+              <h2>Number of People</h2>
+              <h2 id="text_zero" class="hidden">Can't be zero</h2>
+            </div>
+            <div class="input_icons">
+              <i class="fa fa-user icon"></i>
+              <input type="number" class="form_input people_input" placeholder="0">
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <div class="result_amounts">
+            <div class="tip_amount">
+              <div>
+                <h3>Tip Amount</h3>
+                <h4>/ person</h4>
+              </div>
+              <div class="amount_number tip_per_person">
+                <span>$0.00</span>
+              </div>
+            </div>
+            <div class="total_amount">
+              <div>
+                <h3>Total</h3>
+                <h4>/ person</h4>
+              </div>
+              <div class="amount_number total_per_person">
+                <span>$0.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="reset">
+            <div>
+              <button class="reset_btn">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

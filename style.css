@@ -1,0 +1,319 @@
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.main_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 23.4rem;
+}
+
+.tip_calculator {
+    background-color: white;
+    height: 85%;
+    width: 23.4rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.wrapper {
+    padding: 1.5rem;
+    height: 100%;
+}
+
+/* HEADER STYLES */
+
+.title {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    color: hsl(186, 14%, 43%);
+    letter-spacing: .5rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* SIDEBAR STYLES */
+
+.sidebar {
+    height: 65%;
+}
+
+.form_bill {
+    height: 25%;
+}
+
+h2 {
+    color: hsl(186, 14%, 43%);
+    font-size: .75rem;
+}
+
+.input_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+.icon {
+    color: hsl(185, 41%, 84%);
+    text-align: center;
+    padding-top: 1.25rem;
+    padding-left: .5rem;
+    position: absolute;
+    left: 0;
+}
+
+.form_input {
+    width: 100%;
+    padding: .5rem;
+    margin-top: .5rem;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(189, 41%, 97%);
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    text-align: end;
+    cursor: pointer;
+    border-color: crimson;
+}
+
+.form_input:placeholder-shown {
+    text-align: end;
+    font-family: inherit;
+    font-weight: 700;
+    color: hsl(185, 65%, 89%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form_select_tip {
+    height: 50%;
+}
+
+.button_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: .5rem;
+}
+
+.tip_btn {
+    height: 2rem;
+    width: 100%;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tip_btn:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.custom_input {
+    height: 2rem;
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    text-align: end;
+    padding-right: .5rem;
+    cursor: pointer;
+}
+
+.custom_input:placeholder-shown {
+    color: hsl(186, 14%, 43%);
+    text-align: center;
+}
+
+.form_people_number {
+    height: 25%;
+    cursor: pointer;
+}
+
+.text_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#text_zero {
+    color: rgb(224, 68, 68);
+    margin-left: 5.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* RESULT STYLES */
+
+.result {
+    height: 35%;
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.result_amounts {
+    width: 90%;
+    height: 50%;
+}
+
+.tip_amount, .total_amount {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    height: 50%;
+}
+
+.tip_amount div {
+    padding-top: .5rem;
+}
+
+.total_amount div {
+    padding-top: .5rem;
+}
+
+h3 {
+    font-size: .85rem;
+    color: hsl(185, 41%, 84%);
+}
+
+h4 {
+    font-size: .65rem;
+    font-weight: 400;
+    color: hsl(184, 18%, 69%);
+}
+
+.amount_number {
+    display: flex;
+    justify-content: end;
+    font-size: 1.7rem;
+    color: hsl(172, 67%, 45%);
+}
+
+.reset {
+    width: 90%;
+}
+
+.reset_btn {
+    height: 2rem;
+    width: 100%;
+    background-color: hsl(183, 94%, 21%);
+    color: hsl(184, 14%, 40%);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.reset_btn:hover {
+    background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
+}
+
+/* RESPONSIVE LAYOUT */
+
+@media (min-width: 768px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .main_container {
+        max-width: 100vw;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        margin-top: -5rem;
+        padding-bottom: 2rem;
+    }
+
+    .tip_calculator {
+        width: 100%;
+        height: 55%;
+        border-radius: 15px;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .sidebar, .result {
+        width: 50%;
+        height: 100%;
+    }
+
+    .sidebar {
+        margin-right: .75rem;
+    }
+
+    .result {
+        margin-left: .75rem;
+        justify-content: space-between;
+    }
+    
+    .result_amounts {
+        margin-top: 1.5rem;
+        height: 40%;
+    }
+
+    .reset {
+        margin-bottom: 2rem;
+    }
+}
+
